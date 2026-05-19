@@ -1,19 +1,16 @@
-[project]
+[tool.poetry]
 name = "test-project"
 version = "0.1.0"
-description = "This is for test project"
-authors = [
-    {name = "Jan Rambo",email = "rambo@abc.com"}
-]
+description = "This is test project"
+authors = ["Bakoo"]
+license = "0.1.0"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "black (>=22.8.0,<23.0.0)"
-]
 
-[tool.poetry]
-packages = [{include = "test_project", from = "src"}]
+[tool.poetry.dependencies]
+python = "^3.12"
+black = "^22.8.0"
+
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
